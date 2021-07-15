@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9897B201-4DBF-0081-05B0-82325923F720" name="friendship">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:43:03 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="date_start" id="7542330C-6603-4EDA-31D3-0DF298D31688">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:43:11 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_finish" id="400F4939-3EE7-31E6-EBBB-C432ABB893E8">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:43:25 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_player" id="8ED624BC-8E3D-9543-ACFF-51015CEC239D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:43:48 UTC</createdTime>
+<generatorID>144F1B7B-784D-9343-3FC4-32197998CAF9</generatorID>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<referedAttribute>DE9B0179-D52D-A11F-37CC-51F8DDEE3E43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_player1" id="466B50DE-4405-835C-8F9A-CED0D8FB6522">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:44:10 UTC</createdTime>
+<generatorID>F5A44913-8EDE-50CB-2E3D-6A5B4DE84845</generatorID>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<referedAttribute>DE9B0179-D52D-A11F-37CC-51F8DDEE3E43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B0855DF3-8052-9A3D-A9CE-6FDF2B4BB21D" name="friendship PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:43:48 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8ED624BC-8E3D-9543-ACFF-51015CEC239D</attributeRef>
+<attributeRef>466B50DE-4405-835C-8F9A-CED0D8FB6522</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

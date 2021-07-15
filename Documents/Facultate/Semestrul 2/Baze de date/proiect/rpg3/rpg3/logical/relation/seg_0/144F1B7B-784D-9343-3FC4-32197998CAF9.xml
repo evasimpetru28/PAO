@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="friend_1" directorySegmentName="seg_0" id="144F1B7B-784D-9343-3FC4-32197998CAF9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:43:48 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<sourcePk>2155CF0F-2773-5F77-D0E5-2FEB6499AFDB</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9ADEFB9A-B473-7257-E641-98F304E6228F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9897B201-4DBF-0081-05B0-82325923F720</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

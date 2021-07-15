@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9ADEFB9A-B473-7257-E641-98F304E6228F" name="player">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:38:40 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_player" id="DE9B0179-D52D-A11F-37CC-51F8DDEE3E43">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:38:46 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="player_name" id="56FFA473-BE5D-F7FC-59EC-0FC694C3FA5D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:39:05 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<defaultValue>Hero</defaultValue>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HP" id="A1D3EEA1-863C-2614-D5B3-D9C589D0625B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:40:08 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<defaultValue>30</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MP" id="7EC262A5-3990-BEAD-61C2-9389327D394A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:40:33 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXP" id="3AB33521-3108-1EE8-8E83-507511DE35CB">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:41:17 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="level" id="D3D37632-5422-A652-4850-D503EEA0561E">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:41:45 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="money" id="8EE36152-47DB-9EDE-B732-0890D1EE30EF">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:42:04 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2155CF0F-2773-5F77-D0E5-2FEB6499AFDB" name="player PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:39:04 UTC</createdTime>
+<ownerDesignName>rpg3</ownerDesignName>
+<engineerTo>
+<item key="450E886E-6624-A896-1482-42ED6191C5F3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE9B0179-D52D-A11F-37CC-51F8DDEE3E43</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
