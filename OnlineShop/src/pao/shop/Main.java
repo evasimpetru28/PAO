@@ -2,6 +2,9 @@ package pao.shop;
 
 import pao.shop.dao.configuration.DatabaseConfiguration;
 import pao.shop.dao.repository.CategoryRepository;
+import pao.shop.dao.repository.ProductRepository;
+import pao.shop.dao.repository.ProductSizeRepository;
+import pao.shop.dao.repository.SizeRepository;
 
 import javax.xml.crypto.Data;
 import java.io.IOException;
@@ -22,8 +25,11 @@ public class Main {
 //        }
 
         DatabaseConfiguration dbc = new DatabaseConfiguration();
+
         CategoryRepository.getCategoryRepository().createTable();
-//        ProductRepository.getProductRepository().createTable();
+        ProductRepository.getProductRepository().createTable();
+        SizeRepository.getSizeRepository().createTable();
+        ProductSizeRepository.getProductSizeRepository().createTable();
     }
 
 }

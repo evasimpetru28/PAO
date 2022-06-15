@@ -1,22 +1,23 @@
 package pao.shop.entity.catalog;
 
 public class Product {
-    private int id;
+    private Integer id;
     private String productName;
-    private float productPrice;
+    private Double productPrice;
     private String color;
-    private String size;
     private String productDescription;
-    private int categoryId;
+    private Integer categoryId;
+    private Double price;
 
-    public Product(String productName, int productCode, float productPrice, String color, String size, String productDescription, int categoryCode) {
+
+    public Product(Integer id, String productName, Double productPrice, String color, String productDescription, Double price, Integer categoryId) {
         this.productName = productName;
-        this.id = productCode;
+        this.id = id;
         this.productPrice = productPrice;
         this.color = color;
-        this.size = size;
         this.productDescription = productDescription;
-        this.categoryId = categoryCode;
+        this.price = price;
+        this.categoryId = categoryId;
     }
 
     public String getColor() {
@@ -27,14 +28,6 @@ public class Product {
         this.color = color;
     }
 
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
     public String getProductName() {
         return productName;
     }
@@ -43,19 +36,19 @@ public class Product {
         this.productName = productName;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public float getProductPrice() {
+    public Double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(float productPrice) {
+    public void setProductPrice(Double productPrice) {
         this.productPrice = productPrice;
     }
 
@@ -67,24 +60,32 @@ public class Product {
         this.productDescription = productDescription;
     }
 
-    public int getCategoryId() {
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Integer getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+    public void setCategoryId(Integer categoryId) {
         this.categoryId = categoryId;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "productName='" + productName + '\'' +
-                ", productCode=" + id +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
                 ", productPrice=" + productPrice +
-                ", color=" + color +
-                ", size=" + size +
+                ", color='" + color + '\'' +
                 ", productDescription='" + productDescription + '\'' +
-                ", categoryCode=" + categoryId +
+                ", categoryId=" + categoryId +
+                ", price=" + price +
                 '}';
     }
 }

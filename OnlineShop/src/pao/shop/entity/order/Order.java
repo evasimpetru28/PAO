@@ -1,22 +1,15 @@
 package pao.shop.entity.order;
 
-import pao.shop.entity.User;
-
 import java.util.Date;
-import java.util.List;
 
-public class Order extends Cart {
-
+public class Order {
+    private Integer id;
     private Date orderDate;
-    private Integer orderCode;
-    private User customer;
-    private OrderStatus status;
+    private String status;
 
-    public Order(List<OrderProduct> products, Integer cartCode, Date orderDate, Integer orderCode, User customer, OrderStatus status) {
-        super(products, cartCode);
+    public Order(Integer id, Date orderDate, String status) {
         this.orderDate = orderDate;
-        this.orderCode = orderCode;
-        this.customer = customer;
+        this.id = id;
         this.status = status;
     }
 
@@ -28,36 +21,27 @@ public class Order extends Cart {
         this.orderDate = orderDate;
     }
 
-    public Integer getOrderCode() {
-        return orderCode;
+    public Integer getId() {
+        return id;
     }
 
-    public void setOrderCode(Integer orderCode) {
-        this.orderCode = orderCode;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public User getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(User customer) {
-        this.customer = customer;
-    }
-
-    public OrderStatus getStatus() {
+    public String  getStatus() {
         return status;
     }
 
-    public void setStatus(OrderStatus status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
     @Override
     public String toString() {
         return "Order{" +
-                "orderDate=" + orderDate +
-                ", orderCode=" + orderCode +
-                ", customer=" + customer +
+                ", id=" + id +
+                ", orderDate=" + orderDate +
                 ", status=" + status +
                 '}';
     }

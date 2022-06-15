@@ -1,5 +1,11 @@
 package pao.shop.dao.repository;
 
+import pao.shop.dao.configuration.DatabaseConfiguration;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 public class ProductRepository {
     private static ProductRepository productRepository;
     private ProductRepository(){};
@@ -16,14 +22,18 @@ public class ProductRepository {
                 "(id SERIAL PRIMARY KEY," +
                 "productName VARCHAR(25) NOT NULL," +
                 "productPrice NUMERIC(3,2) NOT NULL," +
-                "inStock BOOLEAN," +
                 "color VARCHAR(10)," +
                 "productDescription VARCHAR(250)," +
-                "categoryId INT," +
-                "   CONSTRAINT fk_categoryId" +
-                "       FOREIGN KEY(categoryId)" +
-                "           REFERENCES category(id)" +
+                "categoryId INT REFERENCES category(id) NOT NULL" +
                 ");";
-        // ADAUGA LA STRING ^ FOREIGN KEY PENTRU SIZE
+        Connection connection = DatabaseConfiguration.getDatabaseConnection();
+
+        try{
+            Statement statement = connection.createStatement();
+            statement.execute(createTable);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
     }
 }

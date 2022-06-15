@@ -4,9 +4,9 @@ public class Category {
     private Integer id;
     private String categoryName;
 
-    public Category(String categoryName, int categoryCode) {
+    public Category(String categoryName, Integer id) {
         this.categoryName = categoryName;
-        this.id = categoryCode;
+        this.id = id;
     }
 
     public String getCategoryName() {
@@ -17,17 +17,19 @@ public class Category {
         this.categoryName = categoryName;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
     @Override
     public String toString() {
-        return "category: Name=" + categoryName +
-                ", Code=" + id;
+        return "Category{" +
+                "id=" + id +
+                ", categoryName='" + categoryName + '\'' +
+                '}';
     }
 }

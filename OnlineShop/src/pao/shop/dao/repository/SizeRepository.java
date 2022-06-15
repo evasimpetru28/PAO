@@ -6,30 +6,30 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CategoryRepository {
-    private static CategoryRepository categoryRepository;
-    private CategoryRepository(){}
-    public static CategoryRepository getCategoryRepository(){
-        if (categoryRepository == null){
-            categoryRepository = new CategoryRepository();
+public class SizeRepository {
+
+    private static SizeRepository sizeRepository;
+    private SizeRepository(){}
+    public static SizeRepository getSizeRepository(){
+        if (sizeRepository == null){
+            sizeRepository = new SizeRepository();
         }
-        return categoryRepository;
+        return sizeRepository;
     }
 
     public void createTable(){
-        String createTable = "CREATE TABLE IF NOT EXISTS category" +
+        String createTable = "CREATE TABLE IF NOT EXISTS SIZE" +
                 "(id SERIAL PRIMARY KEY," +
-                "categoryName VARCHAR(250) NOT NULL" +
+                "sizeCH VARCHAR(2) NOT NULL," +
+                "sizeNO NUMERIC(2) NOT NULL" +
                 ");";
         Connection connection = DatabaseConfiguration.getDatabaseConnection();
 
-        try {
+        try{
             Statement statement = connection.createStatement();
             statement.execute(createTable);
-        } catch (SQLException e) {
+        } catch (SQLException e){
             e.printStackTrace();
         }
-
     }
-
 }

@@ -1,23 +1,18 @@
 package pao.shop.entity;
 
-import pao.shop.entity.order.Cart;
-
 public class User {
-
+    private Integer id;
     private String fullName;
-    private Integer userId;
     private String email;
     private String address;
     private String phoneNumber;
-    private Cart cart;
 
-    public User(String fullName, Integer userId, String email, String address, String phoneNumber, Cart cart) {
+    public User(Integer id, String fullName, String email, String address, String phoneNumber) {
         this.fullName = fullName;
-        this.userId = userId;
+        this.id = id;
         this.email = email;
         this.address = address;
         this.phoneNumber = phoneNumber;
-        this.cart = cart;
     }
 
     public String getFullName() {
@@ -28,12 +23,12 @@ public class User {
         this.fullName = fullName;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getEmail() {
@@ -60,23 +55,14 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public Cart getCart() {
-        return cart;
-    }
-
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
-
     @Override
     public String toString() {
         return "User{" +
-                "fullName='" + fullName + '\'' +
-                ", userId=" + userId +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", cart=" + cart +
                 '}';
     }
 }
