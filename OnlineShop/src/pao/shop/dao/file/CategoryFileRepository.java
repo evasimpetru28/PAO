@@ -1,4 +1,4 @@
-package pao.shop.repo.file;
+package pao.shop.dao.file;
 
 
 import pao.shop.entity.catalog.Category;
@@ -7,21 +7,21 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CategoryRepository {
+public class CategoryFileRepository {
 
     private static FileReader fin;
     private static FileWriter fout;
-    private static CategoryRepository scs;
+    private static CategoryFileRepository scs;
 
-    private CategoryRepository() throws IOException {
+    private CategoryFileRepository() throws IOException {
         fin = new FileReader("categories_in.txt");
         fout = new FileWriter("categories_out.txt", true);
 
     }
 
-    public static CategoryRepository getInstance() throws IOException {
+    public static CategoryFileRepository getInstance() throws IOException {
         if (scs == null) {
-            scs = new CategoryRepository();
+            scs = new CategoryFileRepository();
         }
         return scs;
     }

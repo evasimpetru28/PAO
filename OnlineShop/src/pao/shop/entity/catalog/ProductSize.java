@@ -1,4 +1,4 @@
 package pao.shop.entity.catalog;
 
-public class Size {
+public class ProductSize {
 }

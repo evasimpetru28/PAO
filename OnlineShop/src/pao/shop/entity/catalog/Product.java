@@ -1,40 +1,37 @@
 package pao.shop.entity.catalog;
 
 public class Product {
-
+    private int id;
     private String productName;
-    private int productCode;
     private float productPrice;
-    private boolean inStock;
-    private Color color;
-    private Size size;
+    private String color;
+    private String size;
     private String productDescription;
-    private int categoryCode;
+    private int categoryId;
 
-    public Product(String productName, int productCode, float productPrice, boolean inStock, Color color, Size size, String productDescription, int categoryCode) {
+    public Product(String productName, int productCode, float productPrice, String color, String size, String productDescription, int categoryCode) {
         this.productName = productName;
-        this.productCode = productCode;
+        this.id = productCode;
         this.productPrice = productPrice;
-        this.inStock = inStock;
         this.color = color;
         this.size = size;
         this.productDescription = productDescription;
-        this.categoryCode = categoryCode;
+        this.categoryId = categoryCode;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public Size getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(Size size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
@@ -46,12 +43,12 @@ public class Product {
         this.productName = productName;
     }
 
-    public int getProductCode() {
-        return productCode;
+    public int getId() {
+        return id;
     }
 
-    public void setProductCode(int productCode) {
-        this.productCode = productCode;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public float getProductPrice() {
@@ -62,14 +59,6 @@ public class Product {
         this.productPrice = productPrice;
     }
 
-    public boolean isInStock() {
-        return inStock;
-    }
-
-    public void setInStock(boolean inStock) {
-        this.inStock = inStock;
-    }
-
     public String getProductDescription() {
         return productDescription;
     }
@@ -78,11 +67,24 @@ public class Product {
         this.productDescription = productDescription;
     }
 
-    public int getCategoryCode() {
-        return categoryCode;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategoryCode(int categoryCode) {
-        this.categoryCode = categoryCode;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productName='" + productName + '\'' +
+                ", productCode=" + id +
+                ", productPrice=" + productPrice +
+                ", color=" + color +
+                ", size=" + size +
+                ", productDescription='" + productDescription + '\'' +
+                ", categoryCode=" + categoryId +
+                '}';
     }
 }

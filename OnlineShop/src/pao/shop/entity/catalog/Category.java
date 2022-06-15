@@ -1,13 +1,12 @@
 package pao.shop.entity.catalog;
 
 public class Category {
-
+    private Integer id;
     private String categoryName;
-    private Integer categoryCode;
 
     public Category(String categoryName, int categoryCode) {
         this.categoryName = categoryName;
-        this.categoryCode = categoryCode;
+        this.id = categoryCode;
     }
 
     public String getCategoryName() {
@@ -18,17 +17,17 @@ public class Category {
         this.categoryName = categoryName;
     }
 
-    public int getCategoryCode() {
-        return categoryCode;
+    public int getId() {
+        return id;
     }
 
-    public void setCategoryCode(int categoryCode) {
-        this.categoryCode = categoryCode;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
     public String toString() {
         return "category: Name=" + categoryName +
-                ", Code=" + categoryCode;
+                ", Code=" + id;
     }
 }

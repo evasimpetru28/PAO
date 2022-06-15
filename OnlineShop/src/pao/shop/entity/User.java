@@ -1,6 +1,6 @@
 package pao.shop.entity;
 
-import pao.shop.entity.cart.Cart;
+import pao.shop.entity.order.Cart;
 
 public class User {
 
@@ -66,5 +66,17 @@ public class User {
 
     public void setCart(Cart cart) {
         this.cart = cart;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "fullName='" + fullName + '\'' +
+                ", userId=" + userId +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", cart=" + cart +
+                '}';
     }
 }

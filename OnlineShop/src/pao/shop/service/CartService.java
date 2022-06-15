@@ -1,6 +1,5 @@
 package pao.shop.service;
 
-import pao.shop.entity.cart.Cart;
 import pao.shop.entity.order.OrderProduct;
 
 public class CartService {

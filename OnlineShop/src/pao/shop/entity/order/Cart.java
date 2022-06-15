@@ -1,4 +1,4 @@
-package pao.shop.entity.cart;
+package pao.shop.entity.order;
 
 import pao.shop.entity.order.OrderProduct;
 
@@ -29,5 +29,13 @@ public class Cart {
 
     public void setProducts(List<OrderProduct> products) {
         this.products = products;
+    }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "products=" + products +
+                ", cartCode=" + cartCode +
+                '}';
     }
 }

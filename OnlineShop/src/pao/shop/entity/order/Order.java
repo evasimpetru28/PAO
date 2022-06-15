@@ -1,6 +1,5 @@
 package pao.shop.entity.order;
 
-import pao.shop.entity.cart.Cart;
 import pao.shop.entity.User;
 
 import java.util.Date;
@@ -51,5 +50,15 @@ public class Order extends Cart {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderDate=" + orderDate +
+                ", orderCode=" + orderCode +
+                ", customer=" + customer +
+                ", status=" + status +
+                '}';
     }
 }
