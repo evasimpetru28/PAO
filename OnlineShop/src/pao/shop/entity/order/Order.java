@@ -13,8 +13,8 @@ public class Order extends Cart {
     private User customer;
     private OrderStatus status;
 
-    public Order(List<OrderProduct> products, Date orderDate, Integer orderCode, User customer, OrderStatus status) {
-        super(products);
+    public Order(List<OrderProduct> products, Integer cartCode, Date orderDate, Integer orderCode, User customer, OrderStatus status) {
+        super(products, cartCode);
         this.orderDate = orderDate;
         this.orderCode = orderCode;
         this.customer = customer;

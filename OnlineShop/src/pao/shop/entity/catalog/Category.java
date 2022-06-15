@@ -25,4 +25,10 @@ public class Category {
     public void setCategoryCode(int categoryCode) {
         this.categoryCode = categoryCode;
     }
+
+    @Override
+    public String toString() {
+        return "category: Name=" + categoryName +
+                ", Code=" + categoryCode;
+    }
 }

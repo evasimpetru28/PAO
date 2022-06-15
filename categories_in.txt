@@ -1,0 +1,7 @@
+Dresses,1
+Tops,2
+Pants,3
+Jackets & Coats,4
+Underwear,5
+Shorts,6
+Accessories,7
