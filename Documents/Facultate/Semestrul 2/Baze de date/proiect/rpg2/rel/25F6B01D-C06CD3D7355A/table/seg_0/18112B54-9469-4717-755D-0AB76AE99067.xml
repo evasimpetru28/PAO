@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18112B54-9469-4717-755D-0AB76AE99067" name="skill">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>10900779-B987-4071-76AF-C1AD6FFED707</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_skill" id="3A7FCB02-6592-DED6-29AB-AC8717AD55A5">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>E9E55EF5-1F74-1DFC-DC4D-384F0B69CF24</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="skill_name" id="21FBBC7E-7FBA-8857-22DD-983AAC8DBD0A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>92B3B42E-6594-0165-88B7-D55BD9DDEF83</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="skill_description" id="CCCA49EE-E62A-2642-68DF-4CF1529A17A6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>AEDC9E30-BA95-B958-6A5E-E07001ACAF6D</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D78854D8-862F-72EB-25E8-BF0140E0F57F" name="skill_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>6104F998-986A-1FFD-C32C-365C1068820B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A7FCB02-6592-DED6-29AB-AC8717AD55A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

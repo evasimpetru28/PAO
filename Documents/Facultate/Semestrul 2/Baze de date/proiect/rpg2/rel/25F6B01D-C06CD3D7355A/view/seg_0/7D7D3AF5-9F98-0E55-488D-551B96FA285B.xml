@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7D7D3AF5-9F98-0E55-488D-551B96FA285B" name="V_spells">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_spells
+  ( ID_skill
+   , spell_price )
+ AS SELECT
+    ID_skill
+   , spell_price
+ FROM 
+    spells ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>0FCD58D4-4DC1-10D6-E2B4-274D95E5AD1B</originalTableID>
+<usedContainers>
+<container containerID="0FCD58D4-4DC1-10D6-E2B4-274D95E5AD1B"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_skill" id="1E10228B-5448-F9E6-34A6-4DB5AD0400EC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>9E4FD78C-EF36-3B7F-B715-5D087020655C</referencedColumn>
+<table>0FCD58D4-4DC1-10D6-E2B4-274D95E5AD1B</table>
+<associations>
+<colAssociation fkAssociation="B2373BBB-F6A1-2443-F2AB-0AE2D62CAB65" referredColumn="98636133-BFC2-7547-A975-AF749A06D6F9"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="spell_price" id="C21E0D30-904B-B8C6-F948-12C97748F6B3">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<reference>false</reference>
+<referencedColumn>7E66020D-A300-0257-70BD-ECE4E714B90C</referencedColumn>
+<table>0FCD58D4-4DC1-10D6-E2B4-274D95E5AD1B</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0FCD58D4-4DC1-10D6-E2B4-274D95E5AD1B">
+<container>true</container>
+<tableName>spells</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9E4FD78C-EF36-3B7F-B715-5D087020655C">
+<columnName>ID_skill</columnName>
+<tableName>spells</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7E66020D-A300-0257-70BD-ECE4E714B90C">
+<columnName>spell_price</columnName>
+<tableName>spells</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="15F91DBA-8767-2197-14CD-DB89582B577B" name="spellsv1_PKv2">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="1E10228B-5448-F9E6-34A6-4DB5AD0400EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E60DE5A5-E5E6-EA16-A831-868577CED948" name="spellsv1_PKv1v1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+</ind_PK_UK>
+<ind_PK_UK id="FFB92365-01EB-AA7E-0996-4AF70C64FFAB" name="spellsv1_skills_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="1E10228B-5448-F9E6-34A6-4DB5AD0400EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

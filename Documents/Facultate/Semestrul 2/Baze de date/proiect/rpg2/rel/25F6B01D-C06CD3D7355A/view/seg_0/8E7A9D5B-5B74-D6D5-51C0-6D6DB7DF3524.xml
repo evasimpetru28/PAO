@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="8E7A9D5B-5B74-D6D5-51C0-6D6DB7DF3524" name="V_locations">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_locations
+  ( ID_location
+   , location_name )
+ AS SELECT
+    ID_location
+   , location_name
+ FROM 
+    locations ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>04202AA9-360A-C1CB-978E-BCADF16F58EC</originalTableID>
+<usedContainers>
+<container containerID="04202AA9-360A-C1CB-978E-BCADF16F58EC"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_location" id="5EDCC39B-472C-A57A-4C6D-94D2CD0DB2CB">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>83CA96DF-9226-4CC5-6084-288A8F172E83</referencedColumn>
+<table>04202AA9-360A-C1CB-978E-BCADF16F58EC</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="location_name" id="62B06CE0-DF69-CEE7-7C42-DDDDFBF57D3A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (25)</dataType>
+<reference>false</reference>
+<referencedColumn>7EA5DCC0-4D61-6549-F79F-599994C21275</referencedColumn>
+<table>04202AA9-360A-C1CB-978E-BCADF16F58EC</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="04202AA9-360A-C1CB-978E-BCADF16F58EC">
+<container>true</container>
+<tableName>locations</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="83CA96DF-9226-4CC5-6084-288A8F172E83">
+<columnName>ID_location</columnName>
+<tableName>locations</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7EA5DCC0-4D61-6549-F79F-599994C21275">
+<columnName>location_name</columnName>
+<tableName>locations</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="718D33C1-32FB-2758-7795-1C1E07B96F49" name="locations_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5EDCC39B-472C-A57A-4C6D-94D2CD0DB2CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

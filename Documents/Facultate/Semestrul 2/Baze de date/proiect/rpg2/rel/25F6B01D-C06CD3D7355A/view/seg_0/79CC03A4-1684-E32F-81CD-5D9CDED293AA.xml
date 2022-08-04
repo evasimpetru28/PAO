@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="79CC03A4-1684-E32F-81CD-5D9CDED293AA" name="V_player_abilities">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_player_abilities
+  ( can_be_used
+   , abilities_ID_skill
+   , player_ID_player )
+ AS SELECT
+    can_be_used
+   , abilities_ID_skill
+   , player_ID_player
+ FROM 
+    player_abilities ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>0838F712-20EC-335D-A1B3-2FCCAF9F879B</originalTableID>
+<usedContainers>
+<container containerID="0838F712-20EC-335D-A1B3-2FCCAF9F879B"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="can_be_used" id="3B0889FD-97CB-733B-F03F-2BE139E56D5C">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (1)</dataType>
+<reference>false</reference>
+<referencedColumn>21055E0A-BF19-1248-9C84-917B28E8C2C7</referencedColumn>
+<table>0838F712-20EC-335D-A1B3-2FCCAF9F879B</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="abilities_ID_skill" id="89F99777-1842-303E-60E0-DB1E369560A2">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>D080CE78-8A30-7C27-4D7B-ADB917759217</referencedColumn>
+<table>0838F712-20EC-335D-A1B3-2FCCAF9F879B</table>
+<associations>
+<colAssociation fkAssociation="49086A09-B58C-EF4D-9430-40895051B904" referredColumn="E00A3B87-4DFA-F6A5-D7BF-F31CC8F0EF41"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_ID_player" id="261C04D3-2613-FBFD-7D63-5F0F4CC7ACAC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>625A4363-A49B-2F25-ACD4-2A623AFC22BF</referencedColumn>
+<table>0838F712-20EC-335D-A1B3-2FCCAF9F879B</table>
+<associations>
+<colAssociation fkAssociation="D3A8C50A-EC01-8452-3F79-3E84B94F745D" referredColumn="9617107C-E832-3C1A-0082-9008051F3BF6"/>
+</associations>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0838F712-20EC-335D-A1B3-2FCCAF9F879B">
+<container>true</container>
+<tableName>player_abilities</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="21055E0A-BF19-1248-9C84-917B28E8C2C7">
+<columnName>can_be_used</columnName>
+<tableName>player_abilities</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D080CE78-8A30-7C27-4D7B-ADB917759217">
+<columnName>abilities_ID_skill</columnName>
+<tableName>player_abilities</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="625A4363-A49B-2F25-ACD4-2A623AFC22BF">
+<columnName>player_ID_player</columnName>
+<tableName>player_abilities</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="11EDE7E9-8DCD-9CC4-3AB8-E5E82FFB3EAC" name="player_abilities_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="261C04D3-2613-FBFD-7D63-5F0F4CC7ACAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA6F674D-BF9A-44D8-BB38-A39D0E1285CA" name="player_abilities_player_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="261C04D3-2613-FBFD-7D63-5F0F4CC7ACAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBDF2751-D178-D29E-21C8-A92867C73150" name="player_abilities_abilities_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="89F99777-1842-303E-60E0-DB1E369560A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

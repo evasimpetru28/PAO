@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="unlocked_abilities" directorySegmentName="seg_0" id="9CE3B583-3BBD-96F7-A308-3ED7E0AAF2FC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:07:26 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<sourcePk>6104F998-986A-1FFD-C32C-365C1068820B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A73EF94C-0A76-4931-3402-41DD989DD03B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A12DE4F-0787-6E63-12CD-9051DA993482</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

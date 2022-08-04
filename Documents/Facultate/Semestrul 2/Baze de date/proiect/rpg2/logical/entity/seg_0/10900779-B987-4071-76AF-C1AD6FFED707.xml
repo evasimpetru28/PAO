@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="10900779-B987-4071-76AF-C1AD6FFED707" name="skill">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:00:24 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_skill" id="E9E55EF5-1F74-1DFC-DC4D-384F0B69CF24">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:00:40 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skill_name" id="92B3B42E-6594-0165-88B7-D55BD9DDEF83">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:00:51 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skill_description" id="AEDC9E30-BA95-B958-6A5E-E07001ACAF6D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:01:07 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6104F998-986A-1FFD-C32C-365C1068820B" name="skills PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:00:50 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E9E55EF5-1F74-1DFC-DC4D-384F0B69CF24</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

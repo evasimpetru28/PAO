@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF2601F5-6C72-85DA-91ED-D90243ED84F7" name="spellbook">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>36CE27F7-3ACA-9DC4-B931-2BD2176A1E3C</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="spell_quantity" id="BB117AD0-6DAF-E64E-FC20-944F16A1D9C6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>78D74430-CC56-8C4D-F32F-D1621EC9007D</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_ID_player" id="678ED9E4-BF4B-E8F0-4C35-19451CDE923A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>DDD6E19D-E5D4-D6AD-6176-7BB6E23ADE99</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AB3C95E-2701-1E45-0AEB-36DD5CA0A4AB" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="spells_ID_spell" id="5ACEFAA9-3B24-8F04-E18A-FA728DF79F3A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>678E7AC7-183B-92AC-7B0F-93F6AD103125</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spell_ID_skill" id="99A62DD5-1D4E-0A45-9CDC-C3CA2248C0FD">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>8BCC4F8D-1C9F-F5E5-F4CD-3C44BF7FA5CE</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spellv1_ID_spell" id="0DA6D90D-29C5-45BC-E439-7916804733F1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>59DBA467-E668-0CE9-37BC-6E3816327A09</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E687B140-23EB-A653-6B64-2D35808D5A57" name="spellbook_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>04F96B0E-8F1D-80C6-E2ED-31C292532F9D</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="678ED9E4-BF4B-E8F0-4C35-19451CDE923A"/>
+<colUsage columnID="5ACEFAA9-3B24-8F04-E18A-FA728DF79F3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36A49C72-F582-66F4-BF88-513595F184ED" name="spellbook_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>F14C1615-F410-482D-34B7-197A324C8664</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="678ED9E4-BF4B-E8F0-4C35-19451CDE923A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

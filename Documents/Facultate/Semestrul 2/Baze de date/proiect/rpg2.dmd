@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="rpg2" id="D50CF3C8-A824-23FA-6001-FDB5954CD37C" version="3.5">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:13:35 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D50CF3C8-A824-23FA-6001-FDB5954CD37C</designId>
+</OSDM_Design>

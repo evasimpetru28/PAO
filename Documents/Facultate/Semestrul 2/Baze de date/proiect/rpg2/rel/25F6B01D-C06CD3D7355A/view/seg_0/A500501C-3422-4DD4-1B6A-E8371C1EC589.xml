@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="A500501C-3422-4DD4-1B6A-E8371C1EC589" name="V_player_achievements">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_player_achievements
+  ( achievement_date
+   , allocated_points
+   , player_ID_player
+   , acheivements_ID_achievement
+   , ID_achievement )
+ AS SELECT
+    achievement_date
+   , allocated_points
+   , player_ID_player
+   , acheivements_ID_achievement
+   , ID_achievement
+ FROM 
+    player_achievements ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>8E63E821-0026-2038-2FF4-039D44A9FDD4</originalTableID>
+<usedContainers>
+<container containerID="8E63E821-0026-2038-2FF4-039D44A9FDD4"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="achievement_date" id="6622E48A-6508-C5B3-3C8A-418387C1A18B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>BCCB10B6-54C0-5F65-6F1C-9A17CF3D0476</referencedColumn>
+<table>8E63E821-0026-2038-2FF4-039D44A9FDD4</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="allocated_points" id="B62A4D92-478C-AD14-50F9-8D0A5D1F0BD6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (3)</dataType>
+<reference>false</reference>
+<referencedColumn>98E55C69-37B4-E137-C836-D9DB850F89C9</referencedColumn>
+<table>8E63E821-0026-2038-2FF4-039D44A9FDD4</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_ID_player" id="38D5A1F6-B882-488A-3C3E-AB69688A6589">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>94BEC6CD-0E85-4D66-9A1C-3B908217D824</referencedColumn>
+<table>8E63E821-0026-2038-2FF4-039D44A9FDD4</table>
+<associations>
+<colAssociation fkAssociation="50E63449-5004-CA57-6C63-189BEBC8DDF1" referredColumn="9617107C-E832-3C1A-0082-9008051F3BF6"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="acheivements_ID_achievement" id="D421D6D9-F124-10F3-57B6-F67607E5D26A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>AD4341B9-7452-56EF-8C8E-ADEB019EFAEB</referencedColumn>
+<table>8E63E821-0026-2038-2FF4-039D44A9FDD4</table>
+<associations>
+<colAssociation fkAssociation="187D0276-8AAC-1C8E-EEF7-C4270C821B52" referredColumn="8F62205D-67BD-58DB-72E2-69899D298304"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_achievement" id="58F53EB0-FEF4-5E3D-C3D7-3ABE35979FD9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<referencedColumn>00A4DA5A-7D5D-9E45-75D8-5412AEDA5D05</referencedColumn>
+<table>8E63E821-0026-2038-2FF4-039D44A9FDD4</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8E63E821-0026-2038-2FF4-039D44A9FDD4">
+<container>true</container>
+<tableName>player_achievements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BCCB10B6-54C0-5F65-6F1C-9A17CF3D0476">
+<columnName>achievement_date</columnName>
+<tableName>player_achievements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="98E55C69-37B4-E137-C836-D9DB850F89C9">
+<columnName>allocated_points</columnName>
+<tableName>player_achievements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="94BEC6CD-0E85-4D66-9A1C-3B908217D824">
+<columnName>player_ID_player</columnName>
+<tableName>player_achievements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AD4341B9-7452-56EF-8C8E-ADEB019EFAEB">
+<columnName>acheivements_ID_achievement</columnName>
+<tableName>player_achievements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="00A4DA5A-7D5D-9E45-75D8-5412AEDA5D05">
+<columnName>ID_achievement</columnName>
+<tableName>player_achievements</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="CF5712D8-7916-0DD9-B4F1-C95323EE3024" name="player_achievements_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="38D5A1F6-B882-488A-3C3E-AB69688A6589"/>
+<colUsage columnID="58F53EB0-FEF4-5E3D-C3D7-3ABE35979FD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69D5677C-E9F7-42F5-4CA7-AE53C4A12576" name="player_achievements_player_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="38D5A1F6-B882-488A-3C3E-AB69688A6589"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D0DCF56-DE0F-A13E-8CC3-C89F73CC229F" name="player_achievements_acheivements_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="D421D6D9-F124-10F3-57B6-F67607E5D26A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

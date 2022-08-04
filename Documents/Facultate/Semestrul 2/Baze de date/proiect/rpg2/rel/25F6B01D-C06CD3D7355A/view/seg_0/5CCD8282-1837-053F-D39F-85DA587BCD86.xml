@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="5CCD8282-1837-053F-D39F-85DA587BCD86" name="V_visited_locations">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_visited_locations
+  ( is_current
+   , player_ID_player
+   , locations_ID_location )
+ AS SELECT
+    is_current
+   , player_ID_player
+   , locations_ID_location
+ FROM 
+    visited_locations ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D</originalTableID>
+<usedContainers>
+<container containerID="91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="is_current" id="47CD36E1-5B87-8EC9-0269-5C2A15157E9A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (1)</dataType>
+<reference>false</reference>
+<referencedColumn>162DEDD7-9AB8-E8F5-FF87-09B70E7D8FAE</referencedColumn>
+<table>91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_ID_player" id="6E976120-A35D-8D6B-8EAE-973F853137A7">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>4DBC5822-5273-06E2-C260-0FCE2605CF78</referencedColumn>
+<table>91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D</table>
+<associations>
+<colAssociation fkAssociation="939B0350-83F4-DC13-39B2-FC7535B3B56B" referredColumn="9617107C-E832-3C1A-0082-9008051F3BF6"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="locations_ID_location" id="F25D898A-721D-DB02-E656-596C435260EA">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>51104017-B751-FB3C-996E-F2C87BFC4362</referencedColumn>
+<table>91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D</table>
+<associations>
+<colAssociation fkAssociation="D1E0108B-E731-8325-EA20-C4927F8F7199" referredColumn="5EDCC39B-472C-A57A-4C6D-94D2CD0DB2CB"/>
+</associations>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D">
+<container>true</container>
+<tableName>visited_locations</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="162DEDD7-9AB8-E8F5-FF87-09B70E7D8FAE">
+<columnName>is_current</columnName>
+<tableName>visited_locations</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4DBC5822-5273-06E2-C260-0FCE2605CF78">
+<columnName>player_ID_player</columnName>
+<tableName>visited_locations</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="51104017-B751-FB3C-996E-F2C87BFC4362">
+<columnName>locations_ID_location</columnName>
+<tableName>visited_locations</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="E5257211-7239-33B3-BC93-714D726AADBE" name="visited_locations_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="6E976120-A35D-8D6B-8EAE-973F853137A7"/>
+<colUsage columnID="F25D898A-721D-DB02-E656-596C435260EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B933EDB5-24EF-2C10-2DD1-C918227AFC2C" name="visited_locations_player_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="6E976120-A35D-8D6B-8EAE-973F853137A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE9BFD7B-F151-49C3-16D8-3BF038C466E4" name="visited_locations_locations_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="F25D898A-721D-DB02-E656-596C435260EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E63E821-0026-2038-2FF4-039D44A9FDD4" name="player_achievement">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>D45B6AB4-ACAD-8D78-896B-AF83255B0957</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="achievement_date" id="BCCB10B6-54C0-5F65-6F1C-9A17CF3D0476">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>966051BC-C5C3-067E-DB6D-C75272C308E4</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="allocated_points" id="98E55C69-37B4-E137-C836-D9DB850F89C9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>941A8EDD-3018-D1A8-2CCB-6A70B37A637C</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_ID_player" id="94BEC6CD-0E85-4D66-9A1C-3B908217D824">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>0F48F49F-E93C-7502-DA39-AE9D2E670FAB</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="426AAB18-6D2A-8832-756A-30BCBCE6C731" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="acheivements_ID_achievement" id="AD4341B9-7452-56EF-8C8E-ADEB019EFAEB">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>3B6710A0-6773-ECC0-3272-511A928CCFBE</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="487D7077-1DCC-BB96-D2C8-D87C61954683" referredColumn="568E1123-D954-1305-417D-2EEFC6859013"/>
+</associations>
+</Column>
+<Column name="ID_achievement" id="00A4DA5A-7D5D-9E45-75D8-5412AEDA5D05">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>2D70C810-61E7-01E5-B9FE-657CAD361922</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7899D600-1A46-FE93-0700-DF78FF2F60AF" name="player_achievements_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>506CA788-0F9E-0E84-A924-0AC5DE4CF234</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94BEC6CD-0E85-4D66-9A1C-3B908217D824"/>
+<colUsage columnID="00A4DA5A-7D5D-9E45-75D8-5412AEDA5D05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02FA584C-B248-CC59-B1AF-2237990447CA" name="player_achievement_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>F3B01E2D-ED21-A000-54D4-5CAAAABBEC4E</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94BEC6CD-0E85-4D66-9A1C-3B908217D824"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52DAA65F-EE4C-8B99-3CCF-22A009C454F4" name="player_achievement_acheivement_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>96C15794-CC66-EF8C-D142-0AE39959B33B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4341B9-7452-56EF-8C8E-ADEB019EFAEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

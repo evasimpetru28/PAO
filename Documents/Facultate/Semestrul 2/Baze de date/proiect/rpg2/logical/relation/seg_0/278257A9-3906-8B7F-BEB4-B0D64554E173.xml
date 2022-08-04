@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="player_ability" directorySegmentName="seg_0" id="278257A9-3906-8B7F-BEB4-B0D64554E173">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:08:21 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<sourcePk>3BB58104-4AA1-018F-36E7-3FEE1AF6C266</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D8C5C125-3CA7-9810-34F8-EE4F8F0DCF33</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A12DE4F-0787-6E63-12CD-9051DA993482</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

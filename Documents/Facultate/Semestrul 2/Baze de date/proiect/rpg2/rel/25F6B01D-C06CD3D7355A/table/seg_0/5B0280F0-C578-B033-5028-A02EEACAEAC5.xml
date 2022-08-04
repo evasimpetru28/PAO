@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B0280F0-C578-B033-5028-A02EEACAEAC5" name="player_quest">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>3F0E3C05-ED7A-59B0-7589-C6ABE3A9CC0B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="quest_date" id="6B025E3B-B501-8529-25C6-FDDB92C1B483">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>7C7BE3AD-D8E9-1BD6-CBBC-A32A4A55081F</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quest_ID_quest" id="7E4C944E-3F69-C186-3582-43D7ED336823">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>D73F8C5F-9F2A-CD5B-CAE3-B16A4F0A64DF</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E340939B-B472-C410-7A03-99F522272B2C" referredColumn="09A202D3-F1B5-F972-2B5D-0C3731320B05"/>
+</associations>
+</Column>
+<Column name="player_ID_player" id="7C724605-37BB-E8AC-AB3B-9760B4D18E80">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>3882A9B2-BB50-DEF6-9D3F-38B80EB18C20</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2B2D534-9738-0561-A6AA-CE417BACD3EB" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="quest_status" id="DB89BE56-145B-1B77-890F-A2CEF09CB8F9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>27F720D8-29DC-A187-50F7-D1720C28921B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>In process</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="801D70F6-6F08-B5D3-4855-89948169AE76" name="player_quests_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>8A4FD412-8816-EFF8-7EC9-22D488C3F75B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E4C944E-3F69-C186-3582-43D7ED336823"/>
+<colUsage columnID="7C724605-37BB-E8AC-AB3B-9760B4D18E80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA815473-A2B1-491F-16DD-E93A8849CE4A" name="player_quest_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>13B1943B-5EB5-8C1D-1B1B-47E47A8D0CC1</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C724605-37BB-E8AC-AB3B-9760B4D18E80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69FE8A0F-D978-E1B3-7A87-C66C5161922C" name="player_quest_quest_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>B05E4032-C715-43FE-CB3C-7597682DE6FA</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E4C944E-3F69-C186-3582-43D7ED336823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

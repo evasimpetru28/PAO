@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D" name="visited_location">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>AC9E5E3F-BB71-22A6-BDBF-F0E868F46D2C</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="is_current" id="162DEDD7-9AB8-E8F5-FF87-09B70E7D8FAE">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>38221CB1-B849-5079-1372-30D0472E6789</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_ID_player" id="4DBC5822-5273-06E2-C260-0FCE2605CF78">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>020284E7-F40A-37A2-1AB6-EDA3C24EE305</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51A39258-8CC0-8690-8053-4FB74B098E43" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="location_ID_location" id="51104017-B751-FB3C-996E-F2C87BFC4362">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>D59E8736-B0DF-16DD-52B4-190960F0E9D2</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE182DC7-6340-583E-D9B9-94BCCC120764" referredColumn="83CA96DF-9226-4CC5-6084-288A8F172E83"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F69BF081-1493-64F5-0127-463138327FE7" name="visited_locations_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>29AE0FFA-F1B9-D6AF-844E-E102EF30BCC0</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBC5822-5273-06E2-C260-0FCE2605CF78"/>
+<colUsage columnID="51104017-B751-FB3C-996E-F2C87BFC4362"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="527FA609-74DD-5B33-391B-95B176B013C9" name="visited_location_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>24CA2542-4E8C-0526-FDA1-BDF71EFCD276</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBC5822-5273-06E2-C260-0FCE2605CF78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="414DE0BB-24DF-277A-6E17-97A69DA1E2AC" name="visited_location_location_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 14:12:12 UTC</createdTime>
+<generatorID>704241E1-068F-C014-640E-499B9D4BC0CC</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51104017-B751-FB3C-996E-F2C87BFC4362"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

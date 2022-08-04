@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9490DC3B-5909-DBC7-F7EB-33B4D9C5F648" name="ability">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>D8C5C125-3CA7-9810-34F8-EE4F8F0DCF33</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<ordsAlias>abilityv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_attribute" id="F48E2535-05B1-F5A6-0B37-2DA9DFFBBE14">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>8480CC7D-4CE3-0731-73CE-779D9AE549F2</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attribute_name" id="91E1AEEF-F5C2-3E6B-9DC5-5F4761FFE8C6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>6747BB5B-ECFE-3909-1AAC-DF6C0A59BFC7</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attribute_description" id="A8D1BBA0-7194-9EE6-D3AE-25B824291367">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>C416A3C6-821A-2DED-9879-4FA868825FFF</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ability_price" id="5715D666-7071-2336-A67F-5C22CB590BB9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>E6DC3BD2-4002-06EB-2765-333C2828389F</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1B183E8-F167-1971-7C01-C5B799687D12" name="abilityv1_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>3BB58104-4AA1-018F-36E7-3FEE1AF6C266</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F48E2535-05B1-F5A6-0B37-2DA9DFFBBE14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36CE27F7-3ACA-9DC4-B931-2BD2176A1E3C" name="spellbook">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 12:18:07 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_player" id="DDD6E19D-E5D4-D6AD-6176-7BB6E23ADE99">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:39:26 UTC</createdTime>
+<generatorID>F14C1615-F410-482D-34B7-197A324C8664</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>69CC0C68-0FD4-362F-C820-9850BA0E18F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="spell_quantity" id="78D74430-CC56-8C4D-F32F-D1621EC9007D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 12:18:13 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_spell" id="212E7D8D-A950-74EA-21EF-3712B1288975">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:30:31 UTC</createdTime>
+<generatorID>BE943C32-A13A-39F7-1200-C30CAD5A48F0</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>E8B1FFCD-A9FC-C3B0-7303-863D768D1910</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="04F96B0E-8F1D-80C6-E2ED-31C292532F9D" name="spell book PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:39:26 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DDD6E19D-E5D4-D6AD-6176-7BB6E23ADE99</attributeRef>
+<attributeRef>212E7D8D-A950-74EA-21EF-3712B1288975</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

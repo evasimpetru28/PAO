@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="9275401E-F461-0463-7AA7-D89278A9A4DE" name="V_inventory">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_inventory
+  ( item_quantity
+   , is_equipped
+   , player_ID_player
+   , items_ID_item
+   , items_type_ID_type )
+ AS SELECT
+    item_quantity
+   , is_equipped
+   , player_ID_player
+   , items_ID_item
+   , items_type_ID_type
+ FROM 
+    inventory ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>FCED69FD-ABDE-D20E-4671-614564F56044</originalTableID>
+<usedContainers>
+<container containerID="FCED69FD-ABDE-D20E-4671-614564F56044"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="item_quantity" id="011092C4-CCB1-0388-E499-6651912201F8">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (2)</dataType>
+<reference>false</reference>
+<referencedColumn>CE738DA9-216B-06EF-8202-4CA4B0C023B7</referencedColumn>
+<table>FCED69FD-ABDE-D20E-4671-614564F56044</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="is_equipped" id="248ABDC7-C7BE-656B-6159-3DD927727A1A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CHAR (1)</dataType>
+<reference>false</reference>
+<referencedColumn>D506E330-72F3-49CC-06EA-F50C886FE1B0</referencedColumn>
+<table>FCED69FD-ABDE-D20E-4671-614564F56044</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_ID_player" id="63435769-19E8-73B4-2F5B-DD05E658837B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>2F445C89-D26F-F50A-AA34-41F62F13EFB8</referencedColumn>
+<table>FCED69FD-ABDE-D20E-4671-614564F56044</table>
+<associations>
+<colAssociation fkAssociation="A295862D-1DBF-50D8-B4DC-7F812205137A" referredColumn="9617107C-E832-3C1A-0082-9008051F3BF6"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="items_ID_item" id="CB46DCE5-B4CC-E6B7-4297-00FB380E6E10">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>30507D64-52BC-5435-CBE1-DD9FAB4564BA</referencedColumn>
+<table>FCED69FD-ABDE-D20E-4671-614564F56044</table>
+<associations>
+<colAssociation fkAssociation="6277B53C-61F8-B81F-3294-1AA8C4C74795" referredColumn="338788DD-28C1-D66F-9376-29D183777C71"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="items_type_ID_type" id="775D8EDA-82BF-E595-5D2F-E0BE01FA3CEF">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>67BD448A-7C21-4A2F-C71D-1DDA81DDB7FB</referencedColumn>
+<table>FCED69FD-ABDE-D20E-4671-614564F56044</table>
+<associations>
+<colAssociation fkAssociation="6277B53C-61F8-B81F-3294-1AA8C4C74795" referredColumn="031A998C-BF49-886F-756B-6D1AE2FEF3F6"/>
+</associations>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FCED69FD-ABDE-D20E-4671-614564F56044">
+<container>true</container>
+<tableName>inventory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CE738DA9-216B-06EF-8202-4CA4B0C023B7">
+<columnName>item_quantity</columnName>
+<tableName>inventory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D506E330-72F3-49CC-06EA-F50C886FE1B0">
+<columnName>is_equipped</columnName>
+<tableName>inventory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2F445C89-D26F-F50A-AA34-41F62F13EFB8">
+<columnName>player_ID_player</columnName>
+<tableName>inventory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="30507D64-52BC-5435-CBE1-DD9FAB4564BA">
+<columnName>items_ID_item</columnName>
+<tableName>inventory</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="67BD448A-7C21-4A2F-C71D-1DDA81DDB7FB">
+<columnName>items_type_ID_type</columnName>
+<tableName>inventory</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="D7AD7294-AD7F-6DDC-B338-5B9727643D5C" name="inventory_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="63435769-19E8-73B4-2F5B-DD05E658837B"/>
+<colUsage columnID="CB46DCE5-B4CC-E6B7-4297-00FB380E6E10"/>
+<colUsage columnID="775D8EDA-82BF-E595-5D2F-E0BE01FA3CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA734096-1C41-D2F2-934A-DAA3C5DC1034" name="inventory_items_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="CB46DCE5-B4CC-E6B7-4297-00FB380E6E10"/>
+<colUsage columnID="775D8EDA-82BF-E595-5D2F-E0BE01FA3CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36DEF571-25D6-61E7-27FD-1DA6C9EE07DA" name="inventory_player_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="63435769-19E8-73B4-2F5B-DD05E658837B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

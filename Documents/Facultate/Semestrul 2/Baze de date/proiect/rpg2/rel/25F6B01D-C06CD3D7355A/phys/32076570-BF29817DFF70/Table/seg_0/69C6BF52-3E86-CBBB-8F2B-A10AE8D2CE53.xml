@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="friendship" directorySegmentName="seg_0" id="69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="player_ID_player1" id="108BE3FC-8D10-2D54-78A0-E56C08AA48A3">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="date_start" id="1A35E906-5CAD-18F3-9528-D73C695D1D7C">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status" id="A478A0EC-5047-991C-9621-FA4306E46775">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="player_ID_player" id="F0FED3D7-BFD0-2A08-7D65-870FA19FE1A6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="date_finish" id="FC7753D5-36FE-32F5-F8EB-8F355F3DD255">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="friendship_player_FK" id="3CE98E83-6F4F-E8C7-B40D-CA8F92D510DB">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="friendship_player_FKv1" id="5F2EA9EE-576F-366C-0FA9-151D474CDDC8">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="friendship_PK" id="A23B7350-B2DA-23A4-829E-469F9C88BDA7">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

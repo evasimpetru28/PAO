@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="9B65FBDC-7BB9-4B50-60E7-6EF3B5AC067A" name="V_items">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_items
+  ( ID_item
+   , item_name
+   , item_description
+   , image
+   , type_ID_type
+   , item_price
+   , item_selling_price )
+ AS SELECT
+    ID_item
+   , item_name
+   , item_description
+   , image
+   , type_ID_type
+   , item_price
+   , item_selling_price
+ FROM 
+    items ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>6FE497BA-330E-44A7-B12F-27E89CB0CA58</originalTableID>
+<usedContainers>
+<container containerID="6FE497BA-330E-44A7-B12F-27E89CB0CA58"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_item" id="338788DD-28C1-D66F-9376-29D183777C71">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>C9384132-C8D1-0FAF-08F7-6DBE8DDF901C</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="item_name" id="D0028566-C6FB-A22E-3457-9A1D4A5E9E31">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (25)</dataType>
+<reference>false</reference>
+<referencedColumn>0D9FE731-B40B-97D6-14BA-CE53EFAD009E</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="item_description" id="FB95C6E2-AFFF-2013-4F9B-78F45AA75DDD">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CLOB</dataType>
+<reference>false</reference>
+<referencedColumn>E2E1AD27-0F08-B1A6-BB01-880854CD9D2E</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="image" id="83784789-8443-8BCF-D254-138AFC0E0050">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>BLOB</dataType>
+<reference>false</reference>
+<referencedColumn>54D14D68-F7A3-0796-0FD6-A40209BAAA8E</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type_ID_type" id="031A998C-BF49-886F-756B-6D1AE2FEF3F6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>1705EFE9-811E-4225-FCDD-E0B9275E41D0</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+<associations>
+<colAssociation fkAssociation="145E2047-E8CE-148C-2C38-B2B1CCFD130C" referredColumn="432D667F-54BF-4880-AAFF-B08D4390B70C"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="item_price" id="9F115628-7D02-CF12-A084-5BD5588BA6FD">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<reference>false</reference>
+<referencedColumn>CD16A457-C66D-E747-ADA7-7BA447DB97E7</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="item_selling_price" id="26527312-5FF4-85FA-DBA4-72DF99B3BDD3">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (5)</dataType>
+<reference>false</reference>
+<referencedColumn>F7D86004-B96C-2A02-6376-4D83CE992C8D</referencedColumn>
+<table>6FE497BA-330E-44A7-B12F-27E89CB0CA58</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6FE497BA-330E-44A7-B12F-27E89CB0CA58">
+<container>true</container>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C9384132-C8D1-0FAF-08F7-6DBE8DDF901C">
+<columnName>ID_item</columnName>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0D9FE731-B40B-97D6-14BA-CE53EFAD009E">
+<columnName>item_name</columnName>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E2E1AD27-0F08-B1A6-BB01-880854CD9D2E">
+<columnName>item_description</columnName>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="54D14D68-F7A3-0796-0FD6-A40209BAAA8E">
+<columnName>image</columnName>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1705EFE9-811E-4225-FCDD-E0B9275E41D0">
+<columnName>type_ID_type</columnName>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CD16A457-C66D-E747-ADA7-7BA447DB97E7">
+<columnName>item_price</columnName>
+<tableName>items</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F7D86004-B96C-2A02-6376-4D83CE992C8D">
+<columnName>item_selling_price</columnName>
+<tableName>items</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="D321655C-4D7F-63B7-6693-85A6D6B74C6A" name="items_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="338788DD-28C1-D66F-9376-29D183777C71"/>
+<colUsage columnID="031A998C-BF49-886F-756B-6D1AE2FEF3F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC48A11F-55B0-713B-2B25-D1DC1149898C" name="items_type_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="031A998C-BF49-886F-756B-6D1AE2FEF3F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

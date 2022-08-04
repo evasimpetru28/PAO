@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="inventory" directorySegmentName="seg_0" id="FCED69FD-ABDE-D20E-4671-614564F56044">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="player_ID_player" id="2F445C89-D26F-F50A-AA34-41F62F13EFB8">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="items_ID_item" id="30507D64-52BC-5435-CBE1-DD9FAB4564BA">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="items_type_ID_type" id="67BD448A-7C21-4A2F-C71D-1DDA81DDB7FB">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="item_quantity" id="CE738DA9-216B-06EF-8202-4CA4B0C023B7">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="is_equipped" id="D506E330-72F3-49CC-06EA-F50C886FE1B0">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="inventory_player_FK" id="8A18DA40-5BA7-073A-069C-03028DC99C84">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="inventory_items_FK" id="DE0CDF07-DC11-D3DC-CD15-208EBDF9D38A">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="inventory_PK" id="D7F078E9-9A76-D9FE-FC75-391E9A618F92">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

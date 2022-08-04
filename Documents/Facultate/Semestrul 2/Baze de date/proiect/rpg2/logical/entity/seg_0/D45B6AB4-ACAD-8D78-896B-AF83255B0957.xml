@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D45B6AB4-ACAD-8D78-896B-AF83255B0957" name="player_achievement">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:40:29 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="achievement_date" id="966051BC-C5C3-067E-DB6D-C75272C308E4">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:40:56 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="allocated_points" id="941A8EDD-3018-D1A8-2CCB-6A70B37A637C">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:41:01 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_player" id="0F48F49F-E93C-7502-DA39-AE9D2E670FAB">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:41:47 UTC</createdTime>
+<generatorID>F3B01E2D-ED21-A000-54D4-5CAAAABBEC4E</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>69CC0C68-0FD4-362F-C820-9850BA0E18F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_achievement" id="2D70C810-61E7-01E5-B9FE-657CAD361922">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:16:24 UTC</createdTime>
+<generatorID>96C15794-CC66-EF8C-D142-0AE39959B33B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>DFBB7A75-D09C-6B4C-7C9C-5F9F81AF1307</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="506CA788-0F9E-0E84-A924-0AC5DE4CF234" name="personal_achievements PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:41:47 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F48F49F-E93C-7502-DA39-AE9D2E670FAB</attributeRef>
+<attributeRef>2D70C810-61E7-01E5-B9FE-657CAD361922</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

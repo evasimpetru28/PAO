@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="207CC1FD-80C6-F5C1-C635-0C273EC65537" containerWithKeyObject="BF2601F5-6C72-85DA-91ED-D90243ED84F7" localFKIndex="EE5BBDEE-6600-8414-F619-E5FFF6D78A1B" name="spellbook_spell_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>D7F82B45-C906-07FD-C77C-8330E47CD60A</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<referredTableLongName>spell</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0FCD58D4-4DC1-10D6-E2B4-274D95E5AD1B</referredTableID>
+<keyObject>9C47EE4E-3213-961E-3E54-27CB1AF3301C</keyObject>
+<referredKeyID>9C47EE4E-3213-961E-3E54-27CB1AF3301C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_skill</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

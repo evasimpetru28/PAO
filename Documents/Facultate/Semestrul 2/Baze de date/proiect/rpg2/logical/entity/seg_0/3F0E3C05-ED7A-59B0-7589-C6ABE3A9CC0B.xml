@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F0E3C05-ED7A-59B0-7589-C6ABE3A9CC0B" name="player_quest">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:49:13 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="quest_date" id="7C7BE3AD-D8E9-1BD6-CBBC-A32A4A55081F">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:49:59 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quest_status" id="27F720D8-29DC-A187-50F7-D1720C28921B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:20:16 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue>In process</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_quest" id="D73F8C5F-9F2A-CD5B-CAE3-B16A4F0A64DF">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:51:30 UTC</createdTime>
+<generatorID>B05E4032-C715-43FE-CB3C-7597682DE6FA</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>A2DC9714-0600-A369-3F71-D83DB8C977B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_player" id="3882A9B2-BB50-DEF6-9D3F-38B80EB18C20">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:51:59 UTC</createdTime>
+<generatorID>13B1943B-5EB5-8C1D-1B1B-47E47A8D0CC1</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>69CC0C68-0FD4-362F-C820-9850BA0E18F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A4FD412-8816-EFF8-7EC9-22D488C3F75B" name="peronal quests PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 11:51:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D73F8C5F-9F2A-CD5B-CAE3-B16A4F0A64DF</attributeRef>
+<attributeRef>3882A9B2-BB50-DEF6-9D3F-38B80EB18C20</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

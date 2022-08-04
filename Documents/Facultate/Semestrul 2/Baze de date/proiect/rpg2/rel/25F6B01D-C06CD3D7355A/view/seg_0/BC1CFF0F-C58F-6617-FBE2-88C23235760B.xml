@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="BC1CFF0F-C58F-6617-FBE2-88C23235760B" name="V_acheivements">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_acheivements
+  ( ID_achievement
+   , achievement_description
+   , max_points )
+ AS SELECT
+    ID_achievement
+   , achievement_description
+   , max_points
+ FROM 
+    acheivements ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>75A42292-6650-6978-1998-07C9B5766040</originalTableID>
+<usedContainers>
+<container containerID="75A42292-6650-6978-1998-07C9B5766040"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_achievement" id="8F62205D-67BD-58DB-72E2-69899D298304">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>568E1123-D954-1305-417D-2EEFC6859013</referencedColumn>
+<table>75A42292-6650-6978-1998-07C9B5766040</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="achievement_description" id="E80269AE-18CF-E7B5-3920-C71CB09FD090">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CLOB</dataType>
+<reference>false</reference>
+<referencedColumn>57C4FF35-EE22-98E8-CC3B-E383FFE2B365</referencedColumn>
+<table>75A42292-6650-6978-1998-07C9B5766040</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="max_points" id="182AC308-6657-B102-EED2-A5C8FA69043D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (3)</dataType>
+<reference>false</reference>
+<referencedColumn>D02ECD09-36F6-D823-D123-FD15C98DEA49</referencedColumn>
+<table>75A42292-6650-6978-1998-07C9B5766040</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="75A42292-6650-6978-1998-07C9B5766040">
+<container>true</container>
+<tableName>acheivements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="568E1123-D954-1305-417D-2EEFC6859013">
+<columnName>ID_achievement</columnName>
+<tableName>acheivements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="57C4FF35-EE22-98E8-CC3B-E383FFE2B365">
+<columnName>achievement_description</columnName>
+<tableName>acheivements</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D02ECD09-36F6-D823-D123-FD15C98DEA49">
+<columnName>max_points</columnName>
+<tableName>acheivements</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="C6605169-8F8A-7769-96EA-1338568452C0" name="acheivements_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8F62205D-67BD-58DB-72E2-69899D298304"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

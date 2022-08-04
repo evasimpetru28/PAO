@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="visited_locations" directorySegmentName="seg_0" id="91C3E7EA-E6A2-F1BF-4030-2AEE52216E3D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="is_current" id="162DEDD7-9AB8-E8F5-FF87-09B70E7D8FAE">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="player_ID_player" id="4DBC5822-5273-06E2-C260-0FCE2605CF78">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="locations_ID_location" id="51104017-B751-FB3C-996E-F2C87BFC4362">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="visited_locations_locations_FK" id="414DE0BB-24DF-277A-6E17-97A69DA1E2AC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="visited_locations_player_FK" id="527FA609-74DD-5B33-391B-95B176B013C9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="visited_locations_PK" id="F69BF081-1493-64F5-0127-463138327FE7">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

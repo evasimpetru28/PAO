@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="acheivements" directorySegmentName="seg_0" id="75A42292-6650-6978-1998-07C9B5766040">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_achievement" id="568E1123-D954-1305-417D-2EEFC6859013">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="achievement_description" id="57C4FF35-EE22-98E8-CC3B-E383FFE2B365">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="max_points" id="D02ECD09-36F6-D823-D123-FD15C98DEA49">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="acheivements_PK" id="02F69E87-83B9-3CFB-DB43-C874A045E297">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

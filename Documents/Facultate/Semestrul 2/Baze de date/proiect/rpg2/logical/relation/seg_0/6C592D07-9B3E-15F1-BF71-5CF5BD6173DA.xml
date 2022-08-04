@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="player_inventory" directorySegmentName="seg_0" id="6C592D07-9B3E-15F1-BF71-5CF5BD6173DA">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:08:21 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<sourcePk>B5AD87CC-EE10-81A1-7F92-2A5C9105629A</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1A367004-A705-834F-9B68-0D9801499C60</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EFAB7E35-C433-1E56-93C5-458F0FE63D3F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

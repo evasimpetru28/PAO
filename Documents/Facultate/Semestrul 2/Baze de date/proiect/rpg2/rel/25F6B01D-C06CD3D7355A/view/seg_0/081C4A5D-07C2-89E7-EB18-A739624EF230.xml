@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="081C4A5D-07C2-89E7-EB18-A739624EF230" name="V_skills">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_skills
+  ( ID_skill
+   , skill_name
+   , skill_description )
+ AS SELECT
+    ID_skill
+   , skill_name
+   , skill_description
+ FROM 
+    skills ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>18112B54-9469-4717-755D-0AB76AE99067</originalTableID>
+<usedContainers>
+<container containerID="18112B54-9469-4717-755D-0AB76AE99067"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_skill" id="98636133-BFC2-7547-A975-AF749A06D6F9">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>3A7FCB02-6592-DED6-29AB-AC8717AD55A5</referencedColumn>
+<table>18112B54-9469-4717-755D-0AB76AE99067</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="skill_name" id="9742B366-1245-6476-B7A4-E490C65A52EA">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (25)</dataType>
+<reference>false</reference>
+<referencedColumn>21FBBC7E-7FBA-8857-22DD-983AAC8DBD0A</referencedColumn>
+<table>18112B54-9469-4717-755D-0AB76AE99067</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="skill_description" id="917FF94A-51A3-BA0A-FB47-1588357DF413">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CLOB</dataType>
+<reference>false</reference>
+<referencedColumn>CCCA49EE-E62A-2642-68DF-4CF1529A17A6</referencedColumn>
+<table>18112B54-9469-4717-755D-0AB76AE99067</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="18112B54-9469-4717-755D-0AB76AE99067">
+<container>true</container>
+<tableName>skills</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3A7FCB02-6592-DED6-29AB-AC8717AD55A5">
+<columnName>ID_skill</columnName>
+<tableName>skills</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="21FBBC7E-7FBA-8857-22DD-983AAC8DBD0A">
+<columnName>skill_name</columnName>
+<tableName>skills</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CCCA49EE-E62A-2642-68DF-4CF1529A17A6">
+<columnName>skill_description</columnName>
+<tableName>skills</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="D1FD29C3-DE17-79FB-5E86-931B6F79BB3C" name="skills_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="98636133-BFC2-7547-A975-AF749A06D6F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

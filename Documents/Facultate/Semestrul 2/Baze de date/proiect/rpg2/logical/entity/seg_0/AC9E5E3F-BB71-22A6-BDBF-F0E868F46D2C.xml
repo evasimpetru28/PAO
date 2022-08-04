@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC9E5E3F-BB71-22A6-BDBF-F0E868F46D2C" name="visited_location">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:37:22 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="is_current" id="38221CB1-B849-5079-1372-30D0472E6789">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:37:45 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_player" id="020284E7-F40A-37A2-1AB6-EDA3C24EE305">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:43:24 UTC</createdTime>
+<generatorID>24CA2542-4E8C-0526-FDA1-BDF71EFCD276</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>69CC0C68-0FD4-362F-C820-9850BA0E18F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_location" id="D59E8736-B0DF-16DD-52B4-190960F0E9D2">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:46:02 UTC</createdTime>
+<generatorID>704241E1-068F-C014-640E-499B9D4BC0CC</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<referedAttribute>3C7A2A98-D464-5537-3104-FFC2256D64D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29AE0FFA-F1B9-D6AF-844E-E102EF30BCC0" name="visited_locations PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:41:21 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>020284E7-F40A-37A2-1AB6-EDA3C24EE305</attributeRef>
+<attributeRef>D59E8736-B0DF-16DD-52B4-190960F0E9D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

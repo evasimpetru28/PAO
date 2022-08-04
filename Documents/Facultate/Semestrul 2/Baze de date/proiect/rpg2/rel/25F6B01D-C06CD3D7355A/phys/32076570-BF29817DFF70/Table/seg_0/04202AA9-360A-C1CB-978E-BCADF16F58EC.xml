@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="locations" directorySegmentName="seg_0" id="04202AA9-360A-C1CB-978E-BCADF16F58EC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="location_name" id="7EA5DCC0-4D61-6549-F79F-599994C21275">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_location" id="83CA96DF-9226-4CC5-6084-288A8F172E83">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="locations_PK" id="7B209BB4-4883-E780-4ACD-5F3CE73BBF48">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:30:30 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

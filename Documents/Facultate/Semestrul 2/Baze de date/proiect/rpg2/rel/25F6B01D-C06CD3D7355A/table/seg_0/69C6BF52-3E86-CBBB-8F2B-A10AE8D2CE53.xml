@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53" name="friendship">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>C4599709-4490-1A84-2452-7FD39146899F</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_start" id="1A35E906-5CAD-18F3-9528-D73C695D1D7C">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>CD5821E4-C289-B817-8789-ACBC4637DFA0</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_finish" id="FC7753D5-36FE-32F5-F8EB-8F355F3DD255">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>B81D9EAA-6CB8-5541-E1C7-CA6081342C11</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_ID_player" id="F0FED3D7-BFD0-2A08-7D65-870FA19FE1A6">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>37EE2EA5-4196-F1C6-136F-BAE37BDA330C</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E001AB64-F52A-26AA-030F-E4CB61F66DA4" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="player_ID_player1" id="108BE3FC-8D10-2D54-78A0-E56C08AA48A3">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>88AF9F61-53A0-3069-1DAF-8A2B0E3BA872</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8E1FED9-3FCA-AD01-4B2A-86F3FF1E898D" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A23B7350-B2DA-23A4-829E-469F9C88BDA7" name="friendship_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>9A486731-B078-1A21-4CAF-AC6061814309</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0FED3D7-BFD0-2A08-7D65-870FA19FE1A6"/>
+<colUsage columnID="108BE3FC-8D10-2D54-78A0-E56C08AA48A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CE98E83-6F4F-E8C7-B40D-CA8F92D510DB" name="friendship_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>BB04FD30-8118-E7E4-84FC-FA9CC80A1457</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0FED3D7-BFD0-2A08-7D65-870FA19FE1A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F2EA9EE-576F-366C-0FA9-151D474CDDC8" name="friendship_player_FKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>2F20AB98-8131-D756-81E2-08A1985BDD40</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="108BE3FC-8D10-2D54-78A0-E56C08AA48A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

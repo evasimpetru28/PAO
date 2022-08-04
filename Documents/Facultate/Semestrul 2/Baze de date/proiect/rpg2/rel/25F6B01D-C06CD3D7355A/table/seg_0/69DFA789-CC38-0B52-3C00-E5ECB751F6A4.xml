@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69DFA789-CC38-0B52-3C00-E5ECB751F6A4" name="spellv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>A67D9524-AD3A-BC27-C7DD-822C3793A554</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_spell" id="CD9279DC-003E-BD3A-E469-DD48173F8B4B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>EDAE1C7D-121F-3557-6D62-BA94CB5943BD</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spell_name" id="4A61086E-23AD-C96B-E2C5-CEAE90314588">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>3F5BDB90-95A1-2710-CC22-819226D5182B</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spell_description" id="2A310DAC-B6C5-C8F7-F4F0-0E06AC62A172">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>3A1080C8-D5E6-1BAD-DB21-1561E918A5EB</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spell_price" id="DC4E3BCC-1854-B168-D11F-D16FBD8FCF6B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>DF6F4B22-0BB2-5006-A005-78EAE138C44C</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D24B703-7412-310E-A647-1D84C9DCF224" name="spellv1_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>425C2178-B875-C8DA-9503-51F94C956D79</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD9279DC-003E-BD3A-E469-DD48173F8B4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

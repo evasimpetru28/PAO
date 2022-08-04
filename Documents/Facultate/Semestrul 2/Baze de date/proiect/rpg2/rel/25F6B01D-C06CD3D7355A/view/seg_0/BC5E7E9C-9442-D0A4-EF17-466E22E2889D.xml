@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="BC5E7E9C-9442-D0A4-EF17-466E22E2889D" name="V_quests">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_quests
+  ( ID_quests
+   , required_player_level
+   , quest_description )
+ AS SELECT
+    ID_quests
+   , required_player_level
+   , quest_description
+ FROM 
+    quests ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>E5714566-486E-A1B3-5096-140027C4ADAD</originalTableID>
+<usedContainers>
+<container containerID="E5714566-486E-A1B3-5096-140027C4ADAD"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_quests" id="CAE479B6-8CBC-EFF0-76DD-1AC037F924B5">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>09A202D3-F1B5-F972-2B5D-0C3731320B05</referencedColumn>
+<table>E5714566-486E-A1B3-5096-140027C4ADAD</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="required_player_level" id="88B03B80-34E8-AC1C-489C-A19989BFEBAF">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (3)</dataType>
+<reference>false</reference>
+<referencedColumn>F47273D3-6671-4040-E4F8-80EA1DFA3F87</referencedColumn>
+<table>E5714566-486E-A1B3-5096-140027C4ADAD</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="quest_description" id="01D96B9C-3A37-2357-E252-D0E9A70981D8">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>CLOB</dataType>
+<reference>false</reference>
+<referencedColumn>2412A552-0701-E2A9-8BA0-D69CDDD48F7D</referencedColumn>
+<table>E5714566-486E-A1B3-5096-140027C4ADAD</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E5714566-486E-A1B3-5096-140027C4ADAD">
+<container>true</container>
+<tableName>quests</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="09A202D3-F1B5-F972-2B5D-0C3731320B05">
+<columnName>ID_quests</columnName>
+<tableName>quests</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F47273D3-6671-4040-E4F8-80EA1DFA3F87">
+<columnName>required_player_level</columnName>
+<tableName>quests</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2412A552-0701-E2A9-8BA0-D69CDDD48F7D">
+<columnName>quest_description</columnName>
+<tableName>quests</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="4EB90939-B46D-52F3-179A-15CB4ACB6D86" name="quests_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="CAE479B6-8CBC-EFF0-76DD-1AC037F924B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

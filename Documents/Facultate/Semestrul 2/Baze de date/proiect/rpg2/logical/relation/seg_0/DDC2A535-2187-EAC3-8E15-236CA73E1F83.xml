@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="book_spell" directorySegmentName="seg_0" id="DDC2A535-2187-EAC3-8E15-236CA73E1F83">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:08:58 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<sourcePk>425C2178-B875-C8DA-9503-51F94C956D79</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A67D9524-AD3A-BC27-C7DD-822C3793A554</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>36CE27F7-3ACA-9DC4-B931-2BD2176A1E3C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

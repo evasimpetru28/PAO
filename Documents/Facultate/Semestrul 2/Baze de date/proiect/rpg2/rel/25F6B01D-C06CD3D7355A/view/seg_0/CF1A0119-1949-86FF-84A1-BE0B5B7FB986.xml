@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="CF1A0119-1949-86FF-84A1-BE0B5B7FB986" name="V_type">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_type
+  ( ID_type
+   , type_name )
+ AS SELECT
+    ID_type
+   , type_name
+ FROM 
+    type ;]]></userDefinedSQL>
+<parsed>true</parsed>
+<originalTableID>B845E8E5-8DA2-E4A9-7108-CC6114623D55</originalTableID>
+<usedContainers>
+<container containerID="B845E8E5-8DA2-E4A9-7108-CC6114623D55"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_type" id="432D667F-54BF-4880-AAFF-B08D4390B70C">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>B862F26C-61E0-6076-0405-8DFE233DFA63</referencedColumn>
+<table>B845E8E5-8DA2-E4A9-7108-CC6114623D55</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type_name" id="A9F97DE6-AA28-69C3-646C-78C8F9BACD4B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (25)</dataType>
+<reference>false</reference>
+<referencedColumn>F8E95620-8632-E1EA-515E-908723C4E44B</referencedColumn>
+<table>B845E8E5-8DA2-E4A9-7108-CC6114623D55</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B845E8E5-8DA2-E4A9-7108-CC6114623D55">
+<container>true</container>
+<tableName>type</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B862F26C-61E0-6076-0405-8DFE233DFA63">
+<columnName>ID_type</columnName>
+<tableName>type</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F8E95620-8632-E1EA-515E-908723C4E44B">
+<columnName>type_name</columnName>
+<tableName>type</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="A628F9B1-A9D4-B233-EA0C-44CD2E9A2838" name="type_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="432D667F-54BF-4880-AAFF-B08D4390B70C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

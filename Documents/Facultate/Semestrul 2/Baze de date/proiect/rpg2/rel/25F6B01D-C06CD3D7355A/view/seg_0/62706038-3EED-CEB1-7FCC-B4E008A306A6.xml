@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="62706038-3EED-CEB1-7FCC-B4E008A306A6" name="V_friendship">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW V_friendship
+  ( date_start
+   , date_finish
+   , status
+   , player_ID_player
+   , player_ID_player1 )
+ AS SELECT
+    date_start
+   , date_finish
+   , status
+   , player_ID_player
+   , player_ID_player1
+ FROM 
+    friendship ;]]></userDefinedSQL>
+<validSQL>false</validSQL>
+<parsed>true</parsed>
+<originalTableID>69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53</originalTableID>
+<usedContainers>
+<container containerID="69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="date_start" id="99F4A05E-21F5-980D-87C5-E8A6EAB3B408">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>1A35E906-5CAD-18F3-9528-D73C695D1D7C</referencedColumn>
+<table>69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="date_finish" id="09B09AEC-E17C-4D82-1303-E43EBD05062D">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>FC7753D5-36FE-32F5-F8EB-8F355F3DD255</referencedColumn>
+<table>69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="status" id="0B81B6C0-2C20-405F-F435-723520C1D4CC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<reference>false</reference>
+<referencedColumn>A478A0EC-5047-991C-9621-FA4306E46775</referencedColumn>
+<table>69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_ID_player" id="5A33328A-32CA-9C75-FCF6-E04742F0A99B">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>F0FED3D7-BFD0-2A08-7D65-870FA19FE1A6</referencedColumn>
+<table>69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53</table>
+<associations>
+<colAssociation fkAssociation="82AF0449-59D4-EA00-FAF9-C9B2F716A3BD" referredColumn="9617107C-E832-3C1A-0082-9008051F3BF6"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_ID_player2" id="ED6ADAF1-F9FB-6AD1-E9C3-5578153F12ED">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<reference>false</reference>
+<referencedColumn>108BE3FC-8D10-2D54-78A0-E56C08AA48A3</referencedColumn>
+<table>69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53</table>
+<associations>
+<colAssociation fkAssociation="F11CCEDF-09F1-BFFC-0997-5D53DBC4B410" referredColumn="9617107C-E832-3C1A-0082-9008051F3BF6"/>
+</associations>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="69C6BF52-3E86-CBBB-8F2B-A10AE8D2CE53">
+<container>true</container>
+<tableName>friendship</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1A35E906-5CAD-18F3-9528-D73C695D1D7C">
+<columnName>date_start</columnName>
+<tableName>friendship</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FC7753D5-36FE-32F5-F8EB-8F355F3DD255">
+<columnName>date_finish</columnName>
+<tableName>friendship</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A478A0EC-5047-991C-9621-FA4306E46775">
+<columnName>status</columnName>
+<tableName>friendship</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F0FED3D7-BFD0-2A08-7D65-870FA19FE1A6">
+<columnName>player_ID_player</columnName>
+<tableName>friendship</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="108BE3FC-8D10-2D54-78A0-E56C08AA48A3">
+<columnName>player_ID_player1</columnName>
+<tableName>friendship</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="87FD499E-6115-29D8-281B-84454286A8A8" name="friendship_PKv1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5A33328A-32CA-9C75-FCF6-E04742F0A99B"/>
+<colUsage columnID="ED6ADAF1-F9FB-6AD1-E9C3-5578153F12ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CED9FA2B-2725-530F-0BA1-7871AB01ECAE" name="friendship_player_FKv2">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="5A33328A-32CA-9C75-FCF6-E04742F0A99B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9EE638C-A32F-B246-C6F5-9A8593E81CE7" name="friendship_player_FKv1v1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:40:37 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="ED6ADAF1-F9FB-6AD1-E9C3-5578153F12ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FCED69FD-ABDE-D20E-4671-614564F56044" name="inventory">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>EFAB7E35-C433-1E56-93C5-458F0FE63D3F</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="item_quantity" id="CE738DA9-216B-06EF-8202-4CA4B0C023B7">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>A86665F5-F1AC-0BE3-191C-8E62AACB2477</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_equipped" id="D506E330-72F3-49CC-06EA-F50C886FE1B0">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>B6EE8696-BCB4-13D0-0817-8A7D2AB30E11</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_ID_player" id="2F445C89-D26F-F50A-AA34-41F62F13EFB8">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>2CA7E60A-4AC4-6522-FFCD-8FAFFD6E9D12</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="152EDB87-D3F5-E31D-830A-D35D44E258AB" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="item_ID_item" id="30507D64-52BC-5435-CBE1-DD9FAB4564BA">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>1ECFFF1F-131E-1234-A3C3-9EEBFA9F1DD4</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06C3FB48-6838-145F-0960-FCE6EDBA0959" referredColumn="C9384132-C8D1-0FAF-08F7-6DBE8DDF901C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7F078E9-9A76-D9FE-FC75-391E9A618F92" name="inventory_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>48D62B02-A831-6623-8AFC-7245D4FAE741</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F445C89-D26F-F50A-AA34-41F62F13EFB8"/>
+<colUsage columnID="30507D64-52BC-5435-CBE1-DD9FAB4564BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE0CDF07-DC11-D3DC-CD15-208EBDF9D38A" name="inventory_item_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>6610255B-E5A1-0619-5C26-10390DA134BB</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30507D64-52BC-5435-CBE1-DD9FAB4564BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A18DA40-5BA7-073A-069C-03028DC99C84" name="inventory_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:13:56 UTC</createdTime>
+<generatorID>6C592D07-9B3E-15F1-BF71-5CF5BD6173DA</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F445C89-D26F-F50A-AA34-41F62F13EFB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

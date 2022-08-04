@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0838F712-20EC-335D-A1B3-2FCCAF9F879B" name="player_ability">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>6A12DE4F-0787-6E63-12CD-9051DA993482</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="can_be_used" id="21055E0A-BF19-1248-9C84-917B28E8C2C7">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>54CB78BE-E623-E48A-925F-24430AB40615</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ability_ID_skill" id="D080CE78-8A30-7C27-4D7B-ADB917759217">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>6B9BAEA9-1BBB-1480-3187-86B45FC4F621</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_ID_player" id="625A4363-A49B-2F25-ACD4-2A623AFC22BF">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>D1D191C5-2C35-E711-C0A0-512444FD5326</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FB24496-8D91-8112-59A5-B8C828D0F297" referredColumn="62655CBD-80ED-F479-83C2-B689B0B2ABB4"/>
+</associations>
+</Column>
+<Column name="abilityv1_ID_attribute" id="E1F43FA9-F461-A7F8-ABD0-1C01FFA251E1">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>570676EF-15D2-4E12-E752-E8934257444A</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46DF560B-084F-FE10-8CAA-FF1F16256E13" referredColumn="F48E2535-05B1-F5A6-0B37-2DA9DFFBBE14"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7CE10A2-8C11-9740-9A14-39FA3E70D123" name="player_abilities_PK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>B40CF333-AF83-9420-4594-BA0583450016</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="625A4363-A49B-2F25-ACD4-2A623AFC22BF"/>
+<colUsage columnID="D080CE78-8A30-7C27-4D7B-ADB917759217"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A83148A-6014-7156-6C7B-6B22CCC4F93A" name="player_ability_player_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 15:10:45 UTC</createdTime>
+<generatorID>5F547C6B-561F-EC96-E677-E94F40916760</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="625A4363-A49B-2F25-ACD4-2A623AFC22BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EFC6CA7-6620-0BC2-3CA1-6BC169F4F0B3" name="player_ability_abilityv1_FK">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-15 11:14:55 UTC</createdTime>
+<generatorID>278257A9-3906-8B7F-BEB4-B0D64554E173</generatorID>
+<ownerDesignName>rpg2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1F43FA9-F461-A7F8-ABD0-1C01FFA251E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

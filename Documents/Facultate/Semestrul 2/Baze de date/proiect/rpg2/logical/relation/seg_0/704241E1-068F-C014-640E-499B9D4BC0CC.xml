@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="visited_locations" directorySegmentName="seg_0" id="704241E1-068F-C014-640E-499B9D4BC0CC">
+<createdBy>eva</createdBy>
+<createdTime>2021-07-12 13:46:02 UTC</createdTime>
+<ownerDesignName>rpg2</ownerDesignName>
+<engineerTo>
+<item key="25F6B01D-E27A-6C51-512E-C06CD3D7355A" value="true"/>
+</engineerTo>
+<sourcePk>726E59CF-8F07-CBCE-93A0-3F07C6595644</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5255C278-B540-9FD1-DF9D-A2F29086B9CC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AC9E5E3F-BB71-22A6-BDBF-F0E868F46D2C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
